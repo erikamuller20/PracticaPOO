@@ -8,15 +8,13 @@ namespace PracticaPOO
 {
     public class Auto : Transporte
     {
-        private string marca = "AUDI";
-
         public Auto(int cantPasajeros) : base(cantPasajeros)
         {
         }
 
         public override string TipoTransporte()
         {
-            return "Auto " + marca;
+            return "Auto ";
         }
 
         public override string Avanzar()

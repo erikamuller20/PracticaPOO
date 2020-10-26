@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PracticaPOO
 {
-    public abstract class Transporte
+    public abstract class Transporte : ICaracteristicas
     {
         #region atributos
         private int cantPasajeros;
@@ -38,7 +38,20 @@ namespace PracticaPOO
         {
             return "Se detiene";
         }
+
+        public string Marca()
+        {
+            return "AUDI";
+        }
+
+        public string Color()
+        {
+            return "Blanco";
+        }
+
         #endregion
+
+
 
     }
 }

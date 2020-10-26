@@ -9,15 +9,13 @@ namespace PracticaPOO
     public class Avion : Transporte
     {
 
-        private string color = "Blanco";
-
         public Avion(int cantPasajeros): base(cantPasajeros)
         {
         }
 
         public override string TipoTransporte()
         {
-            return "Avion " + color;
+            return "Avion ";
         }
 
         public override string Avanzar()

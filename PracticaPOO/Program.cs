@@ -21,13 +21,15 @@ namespace PracticaPOO
                 Transporte auto = new Auto(paut);
                 Transporte avion = new Avion(p);
 
-                Console.WriteLine("Transporte: " + auto.TipoTransporte() + " {0}", i);
-                Console.WriteLine("Acción: " + auto.Avanzar());
-                Console.WriteLine("Acción: " + auto.Detener());
+                Console.WriteLine($"Transporte: { auto.TipoTransporte()} {i} ");
+                Console.WriteLine($"Marca: {auto.Marca()}");
+                Console.WriteLine($"Acción: {auto.Avanzar()}");
+                Console.WriteLine($"Acción: {auto.Detener()}");
                 Console.WriteLine();
-                Console.WriteLine("Transporte: " + avion.TipoTransporte() + " {0}", i);
-                Console.WriteLine("Acción: " + avion.Avanzar());
-                Console.WriteLine("Acción: " + avion.Detener());
+                Console.WriteLine($"Transporte: {avion.TipoTransporte()} {i} ");
+                Console.WriteLine($"Color: {auto.Color()}");
+                Console.WriteLine($"Acción: {avion.Avanzar()}");
+                Console.WriteLine($"Acción: {avion.Detener()}");
                 Console.WriteLine();
 
                 p = p - 20;
@@ -45,6 +47,10 @@ namespace PracticaPOO
                 i++;
 
             } while (i <= 5);
+
         }
+
+
     }
+
 }
